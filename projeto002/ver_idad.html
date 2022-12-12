@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+    <main>
+      <h2>
+        Infome sua data de nascimeto:
+        <input type="number" name="txt_ano" id="txt_ano" min="0" />
+      </h2>
+      <h2>
+        Informe seu sexo:
+        <input type="radio" name="radsex" id="mas" checked />
+        <label for="mas">Masculino</label>
+        <input type="radio" name="radsex" id="fem" />
+        <label for="fem">Feminino</label>
+      </h2>
+      <input type="button" value="Verificar" onclick="ver()" />
+      <div id="resultado">Preencha os dados acima para ver o resultado!!</div>
+      <div id="img"></div>
+    </main>
+    <footer>
+      <a href="https://github.com/caiquessantos" target="_blank" rel="self"
+        >@Caíque Santos Santana</a
+      >
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
