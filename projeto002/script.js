@@ -39,8 +39,8 @@ function ver() {
     res.innerHTML =
       "Você tem " + idade + " anos e é do sexo " + sexo + ". <br>";
     res.appendChild(img);
-    img.style.maxWidth = "20em";
-    img.style.maxHeight = "20em";
+    img.style.maxWidth = "10em";
+    img.style.maxHeight = "10em";
     img.style.paddingTop = "1em";
     img.style.borderRadius = "50%";
   }
