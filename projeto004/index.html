@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+  </head>
+  <body onload="on_off()">
+    <header>
+      <h1>Calculadora simples</h1>
+    </header>
+    <main>
+      <div id="res"></div>
+      <table>
+        <tr>
+          <td colspan="2">
+            <button id="botao" class="ligar" onclick="on_off()">On/Off</button>
+          </td>
+          <td>
+            <button id="botao" class="limpar" onclick="limpar()">C</button>
+          </td>
+          <td><button id="botao" onclick="inserir('/')">/</button></td>
+        </tr>
+        <tr>
+          <td><button id="botao" onclick="inserir('1')">1</button></td>
+          <td><button id="botao" onclick="inserir('2')">2</button></td>
+          <td><button id="botao" onclick="inserir('3')">3</button></td>
+          <td><button id="botao" onclick="inserir('*')">x</button></td>
+        </tr>
+        <tr>
+          <td><button id="botao" onclick="inserir('4')">4</button></td>
+          <td><button id="botao" onclick="inserir('5')">5</button></td>
+          <td><button id="botao" onclick="inserir('6')">6</button></td>
+          <td><button id="botao" onclick="inserir('-')">-</button></td>
+        </tr>
+        <tr>
+          <td><button id="botao" onclick="inserir('7')">7</button></td>
+          <td><button id="botao" onclick="inserir('8')">8</button></td>
+          <td><button id="botao" onclick="inserir('9')">9</button></td>
+          <td><button id="botao" onclick="inserir('+')">+</button></td>
+        </tr>
+        <tr>
+          <td><button id="botao" onclick="inserir('0')">0</button></td>
+          <td><button id="botao" onclick="inserir('.')">.</button></td>
+          <td colspan="2">
+            <button id="botao" class="resultado" onclick="resultado()">
+              =
+            </button>
+          </td>
+        </tr>
+      </table>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
